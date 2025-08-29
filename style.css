@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(29, 2, 49);
+    font-size: clamp(28px, 5vw, 55px); 
+    background-color: rgba(247, 223, 191, 0.785);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    
+    font-family: "Luckiest Guy", cursive;
+}
+
+.joke_container {
+    background-image: url('img.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;            
+    max-width: 68rem;       
+    min-height: 34rem;      
+    height: 100%;          
+
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 9px 17px rgb(46, 43, 43);
+}
+
+@media (max-width: 768px) {
+    .joke_container {
+        width: 95%;
+        min-height: 28rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .joke_container {
+        width: 100%;
+        min-height: 22rem;
+        padding: 12px;
+    }
+}
+
+
+
+#btn {
+    width: 100%;
+    max-width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: clamp(16px, 2vw, 22px);
+    background-color: rgb(110, 237, 241);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#btn:hover {
+    background-color: rgb(15, 247, 255);
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+
+#jokes {
+    min-height: 200px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(242, 255, 129, 0.952);
+
+    font-size: clamp(18px, 3vw, 35px);
+    padding: 15px;
+    font-family: "Luckiest Guy", cursive;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .joke_container {
+        padding: 15px;
+    }
+
+    #jokes {
+        font-size: clamp(16px, 3vw, 28px);
+        min-height: 150px;
+    }
+
+    #btn {
+        height: 55px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #jokes {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    #btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
